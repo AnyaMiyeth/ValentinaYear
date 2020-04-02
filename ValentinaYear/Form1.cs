@@ -14,6 +14,7 @@ namespace ValentinaYear
     {
         public Form1()
         {
+           
             InitializeComponent();
         }
 
@@ -22,6 +23,11 @@ namespace ValentinaYear
             DateTime fecha = dateTimePicker1.Value;
            var Edad = DateTime.Now.Year-fecha.Year ;
             textBox2.Text = Edad.ToString();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
